@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html lang="en"></html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Dominic Moransee | IT Consulting</title>
-    <!--This line^ changes the title of the website: the words that appear in the tab.-->
-</head>
 
+<ul>
+<li><a href="index.html">About Me </a></li>
+<li><a href="unit1o1.html">my view of IT </a></li>
+<li><a href="unit1o2.html">website review </a></li>
+<li><a href="unit1o3.html">work review </a></li>
+<li><a href="unit2o1.html">website layout </a></li>
+<li><a href="contactme.html">Contact Me</a></li>
+</ul>
 
-<body>
-<a href="index.html">About Me |</a>
-<a href="unit1o1.html">my view of IT |</a>
-<a href="unit1o2.html">website review |</a>
-<a href="unit1o3.html">work review |</a><!--what is this page for?-->
-<a href="unit2o1.html">website layout |</a>
-<a href="contactme.html">Contact Me</a>
-<h1>Get in contact</h1>
-<p>Hi there, please call one of the numbers provided or alternatively use the form below to contact me about my services and pricing. <br>
-    Thank you.<br><br>
-    my mobile - 07754500588<br>
-    my work phone - 02084584463
-</p>
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #666;
+    }
 
-<form>
-    <label for="fname">Your name:</label><br>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="email">Your email:</label><br>
-    <input type="text" id="email" name="fname"><br><br>
-    Description of what you need help with:<br>
-    <textarea rows = "5" cols = "35" name ="description"> 
-    </textarea><br>
-    <button type="button">Submit</button>
-</form>
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
 
-<!-- *{background-image: url("images/background0.jpg");} -->
-
-</body>
+    .container {
+      position: relative;}
+    .text-block {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;}
+    </style>
+    
+    <div class="container">
+      <img src="images/background2.jpg" alt="unsplash.com" style="width:100%;">
+      <div class="text-block">
+        <h1>contact me</h1>
+        <p>Hi there, please call one of the numbers provided or alternatively use the form below to contact me about my services and pricing. <br>
+            Thank you.<br><br>
+            my mobile - 07754500588<br>
+            my work phone - 02084584463
+        </p>
+        <form>
+            <label for="fname">Your name:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="email">Your email:</label><br>
+            <input type="text" id="email" name="fname"><br><br>
+            Description of what you need help with:<br>
+            <textarea rows = "5" cols = "35" name ="description"> 
+            </textarea><br>
+            <button type="button">Submit</button>
+        </form>
+      </div>
+    image source: unsplash.com
+    </div>
